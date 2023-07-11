@@ -1,0 +1,51 @@
+.confirmentpage{
+    min-height: 100vh;
+    padding-top: 7vw;
+    padding-inline: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center ;
+    overflow: hidden;
+}
+.confirmentpage .paymentdetails{
+    height: 80vh;
+    overflow: auto;
+    width: 40%;
+    min-width: 500px;
+}
+.confirmentpage .paymentdetails .paymentelement{
+    background-color: white;
+    padding: 15px 10px;
+    margin: 15px 0px;
+    border-radius: 25px;
+    width: 90%;
+    min-width: 350px;
+    display: flex;
+    gap: 25px;
+}
+.confirmentpage .paymentdetails .paymentelement img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.confirmentpage  form.payment {
+    width: 40%;
+    min-width: 350px;
+    padding: 15px 10px;
+    background-color: white;
+    border-radius: 25px;
+}
+.confirmentpage  form.payment input{
+    width: 80%;
+}
+.confirmentpage  form.payment button{
+  background-color: black;
+  color: white;
+  transition: 0.3s ;
+}
+.confirmentpage  form.payment button:hover{
+    background-color: white;
+    color: black;
+}

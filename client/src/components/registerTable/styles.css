@@ -1,0 +1,62 @@
+.regsiter{
+    height: 600px;
+    width: 90%;
+    background-image: url('restaurantimg.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    margin-inline: auto;
+    border-radius: 25px;
+}
+.regsiter > .register-detailes{
+    height: 100%;
+    width: 50%;
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding-top: 130px;
+    padding-left: 50px;
+    text-align: center;
+}
+.register-detailes h2{
+    font-size: 45px;
+}
+.register-detailes button{
+    margin-top: 125px;
+    font-size: 25px;
+    padding: 8px 40px;
+    background-color: transparent;
+    border-radius: 100px;
+    position: relative;
+    color: white;
+    transition: 0.3s;
+}
+.register-detailes button::before{
+    content: '';
+    background-color: white;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+    transition: 0.4s;
+}
+.register-detailes button:hover{
+    color: black;
+}
+.register-detailes button:hover::before {
+    width: 100%;
+}
+.register-detailes .Link{
+    text-decoration: none;
+}
+@media only screen and (max-width:500px){
+    .regsiter > .register-detailes{
+        padding-top: 50px;
+        padding-left: 10px;
+        width: 100%;
+        backdrop-filter: blur(5px);
+    }
+   
+}

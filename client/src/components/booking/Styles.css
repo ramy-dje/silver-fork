@@ -1,0 +1,158 @@
+.booking{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-inline: 50px;
+    justify-content: space-around;
+    overflow-x: hidden;
+}
+
+.booking h2{
+    font-size: 45px;
+    text-align: center;
+}
+.booking .days{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:repeat(7,50px);
+    gap: 10px 10px;
+}
+.booking  .day{
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.booking .calender button.abort{
+    padding: 12px 0px;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 100%;
+   background-color: white;
+   margin-top: 25px;
+   transition: 0.3s;
+}
+.booking .calender button.abort:hover{
+    color: white;
+    background-color: rgb(250, 77, 77);
+}
+.booking  .checkedDay{
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: rgb(250, 77, 77);
+    font-size: 30px;
+    transition: 0.3s;
+}
+.booking  .day:hover{
+    color: white;
+    background-color: rgb(250, 77, 77);
+    font-size: 30px;
+}
+.booking  .guestsInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px 30px;
+}
+.booking  .time{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px 30px;
+}
+.booking  .time input{
+    width: 50%;
+    padding: 3px 10px;
+    border: none;
+    font-size: 25px;
+}
+.booking .booknow{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin: 15px 30px;
+    background-color: white;
+}
+.booking .booknow button{
+    padding: 5px 10px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border: none;
+
+}
+.booking  .guestsInfo .guestsButtons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+}
+.booking  .guestsInfo .guestsButtons p{
+    font-size: 30px;
+}
+.booking  .guestsInfo .guestsButtons button{
+    background-color: transparent;
+    border: none;
+    font-size: 28px;
+    height: 30px;
+    width: 30px;
+    transition: 0.3s;
+    
+}
+.booking  .guestsInfo .guestsButtons button:hover{
+    color: white;
+    background-color: rgb(250, 77, 77);
+    font-size: 32px;
+    border-radius: 50%;
+    
+}
+.booking  .guestsInfo .guestsButtons button:last-of-type{
+    margin-top: -5px;
+}
+.booking .bookalertgreen{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(55, 247, 55);
+    padding-inline: 5px;
+}
+.booking .bookalertred{
+    font-size: 25px;
+    text-align: center;
+    color: red;
+    padding-inline: 50px;
+}
+@media only screen and (max-width : 500px) {
+    .booking .calender{
+        margin-top: 10vw;
+    }
+    .booking .days{
+        display: grid;
+        grid-template-columns:repeat(7,40px);
+        gap: 10px 10px;
+    }
+    .booking  .day{
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color: white;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+}

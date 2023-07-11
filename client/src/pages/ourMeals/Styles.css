@@ -1,0 +1,109 @@
+.meals{
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+.mealstitle{
+    font-size: 40px;
+    margin: 0px 50px;
+    position: relative;
+    padding-top: 5vw;
+}
+.mealstitle::after{
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 4px;
+    border-radius: 50px;
+    bottom: -5px;
+    left: 0;
+}
+.mealsCategeories{
+    margin-inline: auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.mealCategeorie{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 10px 10px rgb(189, 189, 189);
+    transition: 0.5s;
+}
+.mealCategeorieactive{
+    background-color:rgb(238, 1, 1) ;
+    color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 10px 10px rgb(189, 189, 189);
+    transition: 0.5s;
+}
+.mealCategeorie:hover{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+.mealicon{
+    background-color: rgb(238, 1, 1);
+    color: white;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    padding-top: 8px;
+    border-radius: 50%;
+    font-size: 50px;
+}
+.mealiconactive{
+    background-color:white;
+    color: rgb(238, 1, 1);
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    padding-top: 8px;
+    border-radius: 50%;
+    font-size: 50px;
+}
+.mealslist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media only screen and (max-width : 500px) {
+    .mealsCategeories{
+        margin-inline: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 90%;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .mealCategeorie{
+        height: 100px;
+        width: 100px;
+    }
+    .mealCategeorieactive{
+        height: 100px;
+        width: 100px;
+    }
+    .mealicon{
+        height: 45px;
+        width: 45px;
+        font-size: 30px;
+    }
+}

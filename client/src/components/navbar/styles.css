@@ -1,0 +1,129 @@
+header{
+    padding-inline: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vw;
+    box-shadow: 2px 0px 15px 2px black;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100vw;
+    background-color: white;
+}
+header img{
+    height: 9vw ;
+    margin-top: 25px;
+}
+nav{
+    display: flex;
+    gap: 40px;
+}
+.userIcon{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+     background-color: rgb(252, 108, 108);
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+nav h4{
+    font-size: 19px;   
+}
+nav h4 a{
+    color: black;
+    text-decoration: none;
+}
+nav h4 button{
+    background-color: transparent;
+    border: none;
+}
+header .userinfo{
+    background-color: white;
+    padding: 10px 10px;
+    width: 250px;
+    position: fixed;
+    top: 55px;
+    right: 20px;
+    box-shadow: 0px 0px 16px 1px rgb(165, 165, 165) ;
+    border-radius: 15px 0px 15px 15px;
+
+}
+
+header .userinfo .Link{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    padding: 7px 5px;
+    text-align: center;
+    transition: 0.4s;
+}
+header .userinfo button{
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 7px 5px;
+    background-color: transparent;
+    border: none;
+    transition: 0.4s;
+}
+header .userinfo button:hover,.Link:hover{
+    
+}
+header .asidelinks{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70vw;
+    height: 100vh;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.637);
+    padding: 20px 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+header .asidelinks a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+header .asidelinks button{
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+}
+header .burgericon{
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    margin-top: 10px;
+}
+@media  only screen and (max-width : 500px ) {
+        header{
+            height: 10vw;
+        }
+        header img{
+            margin-top: 10px;
+           height: 16vw; 
+        }
+}   
+.cartItemsNotifications{
+    text-align: center;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background-color:red;
+    color:white;
+    position:absolute;
+    top:-30;
+    left:-10;
+    
+}

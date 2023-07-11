@@ -1,0 +1,110 @@
+.testemonial{
+  display: flex;
+  align-items: center;
+}
+.opcontainer{
+  width: 50%;
+  height: 350px;
+  margin-left: -100px;
+  text-align: center;
+}
+.opinions{
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  padding: 15px 15px;
+
+
+}
+.btns button{
+  margin-left: 20px;
+  margin-top: 0px;
+  height: 70px;
+  width: 70px;
+  font-size: 24px;
+  border-radius: 50%;
+  border-color: white;
+  transition: 0.3s;
+}
+.btns button:hover{
+  transform: rotate(360deg);
+}
+.opinionText{
+  background-color: black;
+  color: white;
+  height: 500px;
+  width: 800px;
+  border-radius: 0px 40px 40px 0px;
+  text-align: center;
+  padding-top: 50px;
+  padding: 150px 150px 50px 40px;
+  
+}
+.opinionText > h1{
+  font-size: 50px;
+}
+.opinionText > p{
+  font-size: 19px;
+}
+.opinionCard{
+  margin-top: 25px;
+  height: 300px;
+  width: 250px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  box-shadow: 10px 0px 10px 4px rgb(189, 189, 189);
+  border-radius: 10px;
+  padding: 10px 5px;
+}
+.opinionCard img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+.opinionCard p.rating{
+  margin-top: 8px;
+  margin-left: 70%;
+  font-size: 23px;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.redButton{
+  background-color: red;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .testemonial{
+    display: flex;
+    flex-direction: column;
+  }
+  .opinionText{
+    color: white;
+    height: 500px;
+    width: 100%;
+    border-radius: 0px 40px 40px 0px;
+    padding: 10px 10px 10px 10px;
+}
+.opinionText > h1{
+  font-size: 40px;
+}
+.opcontainer{
+  width: 100vw;
+  height: 350px;
+  text-align: center;
+  padding-left: 15px;
+  margin-left: 0px;
+  margin-top: -350px;
+}
+.btns{
+  display: none;
+}
+.opinionCard{
+  box-shadow: 10px 0px 10px 4px rgb(29, 29, 29);
+}
+}

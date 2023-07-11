@@ -1,0 +1,71 @@
+.welcome{
+    display: flex;
+    height: calc(100vh - 75px);
+    padding-inline: 25px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.welcome div.text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.welcome div h1{
+    margin-top: 30px;
+    font-size: 5vw;
+  
+}
+.welcome div button{
+    margin-top: 30px;
+    font-size: 30px;
+    padding: 8px 40px;
+    background-color: red;
+    border-radius: 100px;
+    border-color: white;
+    color: white;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+.img{
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    background-color: red;
+}
+.welcome .Link{
+    color: white;
+    text-decoration: none;
+} 
+@media only screen and (max-width: 600px) {
+    .welcome{
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        width: 100vw;
+        padding-inline: 10px;
+        overflow: hidden;
+    }
+    .welcome div.text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        
+    }
+    .welcome div h1{
+        margin-top: 0px;
+        font-size: 28px;
+      
+    } 
+    .img{
+        height: 300px;
+        width: 90%;
+        background-color: red;
+    }   
+  }

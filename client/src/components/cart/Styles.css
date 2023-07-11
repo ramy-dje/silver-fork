@@ -1,0 +1,102 @@
+aside{
+    width: 400px;
+    height: 100vh;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 6;
+}
+aside .heading{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+
+}
+aside .heading button.arrow {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
+}
+aside .heading h1.carttitle{
+    font-size: 40px;
+} 
+aside .heading button{
+ height: 30px;
+ width: 70px;
+ font-size: 25px;
+}
+aside .heading h1{
+    font-size: 33px;
+}
+aside .cartContainer{
+    background-color: rgb(34, 34, 34);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 70%;
+    overflow: auto;
+
+}
+aside .cartelement{
+    width: 90%;
+    height: 80px;
+    background-color: rgb(51, 51, 51);
+    margin-inline: auto;
+    margin-bottom: 20px;
+    padding-inline:10px ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: wheat;
+
+}
+aside .foodinfo{
+    display: flex;
+    padding-left: 100px;
+    gap: 10px;
+   align-items: center;
+   width: 85%;
+}
+aside .foodinfo img{
+   
+   margin-left: -120px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+aside .moneyinfo{
+    margin-top: -30px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 30%;
+    background-color:  rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+aside .moneyinfo .price {
+    width: 90%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    color: white;
+}
+aside .moneyinfo button{
+    
+    font-size: 30px;
+    padding: 5px 0;
+    width: 70%;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(238, 1, 1);
+    border-color: white;
+}

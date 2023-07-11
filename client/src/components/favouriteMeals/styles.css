@@ -1,0 +1,112 @@
+section.favmeals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.favmeals h1{
+    font-size: 60px;
+}
+.mealscards{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    overflow: hidden;
+}
+.mealcard{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap:5px ;
+    margin: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 2px rgb(189, 189, 189);
+    transition: 0.5s;
+    position: relative;
+}
+.mealcard h4{
+    font-size: 20px;
+    margin-top: -25px;
+}
+.mealcard div.priceandrating{
+    position: absolute;
+    bottom: 0;
+    margin-inline: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 95%;
+    font-size: 23px;
+}
+.mealcard div.priceandrating div{
+    display: flex;
+    align-items: flex-end;
+    gap: 7px;
+}
+.starticon{
+    font-size: 30px;
+    color: rgb(252, 137, 30);
+}
+.dots{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px 5px;
+    transition: 0.3s;
+}
+.dots:Hover{
+    background-color: rgba(255, 255, 255, 0.301);
+}
+.mealcard:hover{
+    transform: scale(1.1,1.1);
+}
+.imgmeal{
+    height: 70%;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 10px 10px 0px 0px;
+}
+section.favmeals button{
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 8px 40px;
+    background-color: red;
+    border-radius: 100px;
+    border-color: white;
+    color: white;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+section.favmeals button .Link{
+    color: white;
+    text-decoration: none;
+}
+@media only screen and (max-width:600px) {
+    section.favmeals h1{
+        font-size: 50px;
+    }
+    .mealscards{
+        flex-wrap: wrap;
+    }
+    .mealcard{
+        height: 200px;
+        width: 150px;
+        margin: 5px 5px;
+    }
+    .mealcard h4{
+        font-size: 12px;
+        margin-top: -25px;
+    }
+    .priceandrating{
+        background-color: white;
+    }
+    .starticon{
+        font-size: 18px;
+    }
+}
