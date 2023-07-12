@@ -12,7 +12,7 @@ function Cart({handleCart}) {
     console.log(cartItems.cartItems)
     const navigate = useNavigate();
     function handlePayment(){
-        axios.post('http://localhost:3000/create-checkout-session',cartItems.cartItems).then((e)=>window.location = e.data).catch((e)=>console.log(e))
+        axios.post('https://silver-fork.onrender.com/create-checkout-session',cartItems.cartItems).then((e)=>window.location = e.data).catch((e)=>console.log(e))
     }
   return (
     <aside>

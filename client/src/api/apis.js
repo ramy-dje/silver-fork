@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseUrl = "http://localhost:3000" ;
+const baseUrl = "https://silver-fork.onrender.com" ;
 
 export const signUp =(data)=> axios.post(`${baseUrl}/signup`,data)
 export const logIn =(data)=> axios.post(`${baseUrl}/login`,data)
